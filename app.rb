@@ -9,7 +9,7 @@ get '/secret' do
 	'This is a page secrect :)'
 end
 
-get '/cat' do
-	@name = ["Pancho", "Currucho", "Batman", "Manchas"].sample
+get '/named-cat' do
+	@name = params[:name]
 	erb :index
 end
