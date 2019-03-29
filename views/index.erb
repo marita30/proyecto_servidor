@@ -1,6 +1,13 @@
+<!-- COMENZANDO CON DECLARAR EL NOMBRE-->
 <% if @name %>
 <h1>My name is <%= @name %> </h1>
 <% end %>
+<!-- Utilizando form para pdir el nombre de gato en vez de ingresarlo directamente en la url -->
+<form action="/named-cat">
+	<input type="text" name="name">
+	<input type="submit" value="submit">
+</form>
+<!-- Dandole diseño y agregando una foto-->
 <div style= 'border: 3px dashed hotpink'> 
 	<img src= 'http://bit.ly/1eze8aE'> 
 </div>
